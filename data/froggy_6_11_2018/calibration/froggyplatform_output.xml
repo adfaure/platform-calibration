@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config id="General">
+ <prop id="smpi/os"/>
+ <prop id="smpi/ois"/>
+ <prop id="smpi/or"/>
+ <prop id="smpi/bw-factor"/>
+ <prop id="smpi/lat-factor"/>
+ <prop id="smpi/async-small-thres" value="17408"/>
+ <prop id="smpi/send-is-detached-thres" value="17408"/>
+</config>

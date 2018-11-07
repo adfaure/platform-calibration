@@ -17,7 +17,7 @@ BLAS_LIB=$(BLAS_INSTALLATION)/lib
 default: calibrate bp_search1 bp_search2
 
 calibrate: calibrate.c experiments.c utils.c 
-	$(CC) -o $@ $^ -I. $(LDIR) $(LIBS)
+	$(CC) -o $@ $^ -I. $(LDIR) $(LIBS) -g
 
 calibrate_blas: calibrate_blas.c utils.c
 	gcc -O3 -o $@ $^ -lblas -I $(BLAS_INCLUDE) -L $(BLAS_LIB)
